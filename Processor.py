@@ -9,11 +9,6 @@ class Processor:
         for key in messageType:
             self.record[key] = list()
 
-    def addMessages(self, messageType):
-        if not self.messageType:
-            self.messageType = dict()
-        self.messageType[self.numMessageType + 1] = messageType
-
     def processWords(self):
         while True:
             s = input()
